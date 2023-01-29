@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PaperTradingInterfase</title>
+    </head>
+    <body>
+        <h1>PaperTradingInterfase</h1>
+        <br><br>
+        <h2>Order form</h2>
+        <form method="POST">
+            <select name="ordertype">
+                <option value="Select">Select order type</option>
+                <option value="market">Market</option>
+                <option value="limit">Limit</option>
+                <option value="stop">Stop</option>
+                <option value="stop_limit">StopLimit</option>
+            </select>
+            <input type="text" value="ticker" name="ticker">
+            <input type="text" value="0" name="qty"> 
+            <input type="radio" value="buy" name="side">Buy
+            <input type="radio" value="sell" name="side">Sell
+            <input type="submit"> 
+        </form>
+    </body>
+</html>
